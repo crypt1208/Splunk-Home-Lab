@@ -4,4 +4,16 @@ After downloading Splunk, Open and goto =
               Settings -> Add Data
 Now add the sample file and also integrate your forwarder with splunk to get logs from your system.
 
-Perform log analysis "https://www.youtube.com/watch?v=LbR5cqqaFVk&t=5s"
+Now after adding data,we will perform analysis of logs, using some basic commands to understand how and what the commands do. 
+Some commands used are:
+
+index=* sourcetype=soc_lab  | eval src_ip=ip   | table _time src_ip action threat |dedup action
+
+index=main sourcetype=soc_lab threat=Trojan | stats count by ip | top limit=4 ip
+
+Using other sample data from internet:
+
+index=main sourcetype="vpn_logs" "185.141.132.26"
+| table _time user source_ip destination_ip realm device_type session_status mfa_status authentication_method disconnect_reason Message alert_status
+
+And like this, we can perform search operations in "Search&Reporting" app of Splunk.
