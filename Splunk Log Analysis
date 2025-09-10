@@ -1,0 +1,7 @@
+Now we will add the data in splunk and analyse.
+
+After downloading Splunk, Open and goto =
+              Settings -> Add Data
+Now add the sample file and also integrate your forwarder with splunk to get logs from your system.
+
+Perform log analysis "https://www.youtube.com/watch?v=LbR5cqqaFVk&t=5s"
