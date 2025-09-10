@@ -5,7 +5,7 @@ Downloading and setting up splunk and monitoring the logs for activity and learn
 =============================
 In this task, I used Splunk to:
 
-Monitor and analyze simulated security events from CSV log data.
+Monitor and analyze simulated security events from [SOC_Task2_Sample_Logs.txt](https://github.com/user-attachments/files/22257267/SOC_Task2_Sample_Logs.txt) CSV log data.
 
 Identify suspicious activity like brute-force logins and malware detection.
 
